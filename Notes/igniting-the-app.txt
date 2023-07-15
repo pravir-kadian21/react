@@ -1,0 +1,21 @@
+1. package.json is a configuration for npm.
+2. bundler is most important package in our app. eg - webpack, parcel, vite  etc.
+3. dev dependency is required in our developent phase while normal depe. is required even
+in the prod. mode.
+4. ^(caret) and ~(tilde) in package means - eg ^1.2.3 will be upgraded to <2.0.0 and ~1.2.3 will
+be upgraded to <1.3.0 automatically.
+5. package-lock.json contains the actual version of the packages being used.
+6. Node modules is the database of our packages (the actual code of parcel is in node modules).
+7. we have parcel as dependency and parcel itself can have more dependencies (transitive dependencies)
+and hence our node modules became so large even on only installing parcel.
+8. Every package inside our node modules also has package.json to mentain its configuration.
+9. To ignite our app we do npx parcel index.html and with a server is created and our app is hosted on it.
+10. npx is used to execute a package.
+11. parcel - creates a dev build, creates local server, HMR - Hot Module Replacement and it uses
+    File Watching Algo for it - written in C++, Gives faster build by caching(creates a parcel cache folder),
+    Image Optimization(rendering img is expensive operation), does Minification, does Bundling, does
+    Compressing, code splitting, differential bundling (diff bundles for diff browsers), good error 
+    handling, gives a way to host app on HTTPS as well, Tree shaking - remove unused code, diff dev and prod
+    bundles(for prod build - npx parcel build index.html and remove main from package.json).
+12. to have browsers support we use browsersList in package.json.
+13. With this we have ignited the app, made it production ready.

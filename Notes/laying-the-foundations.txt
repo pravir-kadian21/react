@@ -1,0 +1,8 @@
+1. npx xyz means we are executing a npm package named xyz.
+2. we add script "start": "parcel index.html", inside package json and we do npm run start 
+   to do npx parcel index.html
+3. JSX merges html ans js.
+4. JSX is NOT html inside js, it is HTML like syntax.
+5. JSX is not pure js(cannot be understood by js engine). It gets transpiled by parsel which 
+    internally uses babel to React.CreateElement() => JS object => HTML Element(rendered)
+    (understood by js engines).

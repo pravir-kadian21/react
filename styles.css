@@ -1,3 +1,127 @@
-#heading {
-  color: red;
+.app {
+  margin: 0;
+  padding: 0;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 7rem;
+  border-bottom: 1px solid rgb(226, 226, 231);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo > img {
+  width: 80px;
+  margin-right: 20px;
+  border-radius: 100px;
+}
+
+.logo-text {
+  font-size: 24px;
+  font-family: Georgia, Arial, Helvetica;
+}
+
+.nav-items > ul {
+  display: flex;
+  list-style-type: none;
+  margin-right: 50px;
+}
+
+.nav-items > ul > li {
+  padding-left: 50px;
+  font-family: monospace;
+  font-size: 14px;
+}
+
+.res-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* padding: 0 220px; */
+  padding: 0 100px;
+}
+
+.res-card {
+  width: 20%;
+  margin: 40px 40px 40px 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  /*  */
+  /* margin-left: 90px; */
+}
+
+.res-card:hover {
+  border: 0.1rem solid rgb(232, 232, 232);
+  border-color: rgb(232, 232, 232);
+  box-shadow: rgba(28, 28, 28, 0.1);
+  padding: 0.5rem;
+  border-radius: 1.5rem;
+}
+
+.res-card > img {
+  width: 100%;
+  border-radius: 1.5rem;
+}
+
+.res-name-rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4px 0;
+}
+
+.res-type-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 8px 0;
+}
+
+.res-delivery-time {
+  text-align: right;
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(54, 54, 54);
+}
+
+.res-name {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.2;
+  font-family: Helvetica, sans-serif;
+}
+
+.res-rating {
+  display: flex;
+
+  border-radius: 6px;
+  padding: 2px 6px;
+  background-color: rgb(36, 150, 63);
+}
+
+.res-rating > div {
+  color: #fff;
+  font-size: 14px;
+  margin-right: 4px;
+  font-weight: 500;
+}
+
+.res-type {
+  font-size: 14px;
+  font-family: Helvetica, sans-serif;
+  color: rgb(105, 105, 105);
+  font-weight: 300;
+  max-width: 200px;
+}
+
+.res-price {
+  font-size: 14px;
+  font-family: Helvetica, sans-serif;
+  color: rgb(105, 105, 105);
+  font-weight: 300;
 }

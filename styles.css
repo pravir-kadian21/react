@@ -435,3 +435,7 @@
   margin-right: 18px;
   margin-top: 8px;
 }
+
+.user {
+  border: 1px solid black;
+}
